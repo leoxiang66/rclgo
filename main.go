@@ -11,6 +11,7 @@ import (
     "fmt"
 )
 
+// C只需要include "hello.h"
 
 func main() {
     // 调用 C 函数
@@ -19,5 +20,7 @@ func main() {
     // 调用 C 函数并获取返回值
     result := C.add(3, 5)
     fmt.Printf("Result of add(3, 5) from C: %d\n", result)
+
+    C.demo()
 
 }
